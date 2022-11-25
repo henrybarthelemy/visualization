@@ -53,7 +53,7 @@ class CreateGraph(Scene):
         #go back to N(0, 1)
         self.wait(0.5)
         graph2 = axes.plot(lambda x: norm.pdf(x), color=WHITE)
-        label2 = Tex("X $\sim$ Normal(0.0, 1)")
+        label2 = Tex("X $\sim$ Normal(0, 1)")
         label2.to_corner(UL, buff=0.5)
         self.play(ReplacementTransform(graph, graph2), ReplacementTransform(label, label2))
         graph = graph2
